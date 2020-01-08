@@ -24,7 +24,7 @@ jobs:
         git clone https://github.com/flexible-collision-library/fcl
         mkdir /home/deps/fcl/build && cd /home/deps/fcl/build
         cmake ..
-        make -j4 && make install
+        make -j4
 
     - name: setup
       run: |

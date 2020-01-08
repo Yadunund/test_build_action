@@ -11,7 +11,7 @@ jobs:
       run: |
         sudo apt update
         # rmf_traffic dependencies
-        sudo apt-get install libeigen3-dev
+        sudo apt-get install libeigen3-dev libccd-dev libfcl-dev -y
         
         # mkdir -p /home/deps
         # cd /home/deps
@@ -26,9 +26,6 @@ jobs:
         # cmake ..
         # make -j4 && sudo make install
         
-        sudo apt-get install libccd-dev
-        sudo apt-get install libfcl-dev
-
     - name: setup
       run: |
         cd /home/

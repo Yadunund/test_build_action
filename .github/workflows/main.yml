@@ -18,13 +18,13 @@ jobs:
         git clone https://github.com/danfis/libccd
         mkdir /home/deps/libccd/build && cd /home/deps/libccd/build
         cmake -G "Unix Makefiles" ..
-        make && make install
+        make && sudo make install
         
         cd /home/deps
         git clone https://github.com/flexible-collision-library/fcl
         mkdir /home/deps/fcl/build && cd /home/deps/fcl/build
         cmake ..
-        make -j4
+        make -j4 && sudo make install
 
     - name: setup
       run: |

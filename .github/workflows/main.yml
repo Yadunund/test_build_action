@@ -22,7 +22,7 @@ jobs:
         
         cd /home/deps
         git clone https://github.com/flexible-collision-library/fcl
-        mkdir /home/deps/libccd/build && cd /home/deps/libccd/build
+        mkdir /home/deps/fcl/build && cd /home/deps/fcl/build
         cmake ..
         make -j4 && make install
 
